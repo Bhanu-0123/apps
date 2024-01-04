@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel</title>
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            flex-direction: column;
+        }
+
+        .logo {
+            width: 150px; /* Adjust the width of the logo as needed */
+            height: 150px; /* Adjust the height of the logo as needed */
+            object-fit: cover;
+            margin-bottom: 20px; /* Adjust the margin as needed */
+            border-radius: 50;
+        }
+
+        .admin-panel {
+            text-align: center;
+            border: 1px solid #ccc;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            position: relative;
+            z-index: 1; /* Make sure the box appears above the cover pic */
+            background-color: #dbdbdb;
+        }  
+
+        .button-container {
+            margin-top: 20px;
+        }
+
+        .button {
+            padding: 10px 20px;
+            font-size: 16px;
+            margin: 10px;
+            cursor: pointer;
+        }
+
+        .login-button {
+            background-color:  #ff7300;
+            color: #000000;
+        }
+
+        .signup-button {
+            background-color:  #ff7300;
+            color: #000000;
+        }
+
+        .goback-button {
+            background-color:  #ff7300;
+            color: #000000;
+        }
+    </style>
+</head>
+<body>
+    <img class="logo" src="public/m.jpg" alt="Logo">
+    <div class="admin-panel">
+        <h2>Admin Panel</h2>
+        <div class="button-container">
+            <button class="button login-button" onclick="redirectTo('adloding.html')">Admin Login</button>
+            <button class="button signup-button" onclick="redirectTo('admindex.html')">Admin Signup</button>
+            <button class="button goback-button" onclick="redirectTo('index.html')">Go Back</button>
+        </div>
+    </div>
+
+    <script>
+        function redirectTo(page) {
+            window.location.href = page;
+        }
+    </script>
+</body>
+</html>

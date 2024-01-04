@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roles</title>
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            flex-direction: column;
+            background-color: #f0f0f0; /* Adjust the background color if needed */
+        }
+
+        .logo {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            margin-bottom: 20px;
+            border-radius: 50%;
+        }
+
+        .admin-panel {
+            text-align: center;
+            border: 1px solid #fff7f7;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            position: relative;
+            z-index: 1;
+            background-color: #dbdbdb;
+            text-decoration-color: #f0f0f0;
+        }
+        
+        
+        .h2{
+            text-decoration-color: #f0f0f0;
+            color: #f0f0f0;
+        }
+
+        .button-container {
+            margin-top: 20px;
+        }
+
+        .button {
+            padding: 10px 20px;
+            font-size: 16px;
+            margin: 10px;
+            cursor: pointer;
+        }
+
+        .login-button {
+            background-color: #ff7300;
+            color: #000000;
+        }
+
+        .signup-button {
+            background-color:  #ff7300;
+            color: #000000;
+        }
+    </style>
+</head>
+<body>
+    <img class="logo" src="public/m.jpg" alt="Logo">
+    <div class="admin-panel">
+        <h2>Welcome! Chose Your Role</h2>
+        <div class="button-container">
+            <button class="button login-button" onclick="redirectTo('main.html')">User</button>
+            <button class="button signup-button" onclick="redirectTo('adam.html')">Admin</button>
+        </div>
+    </div>
+
+    <script>
+        function redirectTo(page) {
+            window.location.href = page;
+        }
+    </script>
+</body>
+</html>
